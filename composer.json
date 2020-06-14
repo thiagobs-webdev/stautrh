@@ -1,0 +1,34 @@
+{
+  "name": "thiagobs-webdev/stautrh",
+  "description": "API Teste para o processo Seletivo Desenvolvedor PHP StautRH.",
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "Thiago Bomfim",
+      "email": "dev@thiagobs.me",
+      "homepage": "https://www.thiagobs.me",
+      "role": "Developer"
+    }
+  ],
+  "config": {
+    "vendor-dir": "libs"
+  },
+  "autoload": {
+    "psr-4": {
+      "StautRH\\": "source/"
+    },
+    "files": [
+      "source/Boot/Config.php",
+      "source/Boot/Helpers.php"
+    ]
+  },
+  "require": {
+    "php": "^7.2",
+    "ext-pdo": "^7.2",
+    "league/plates": "v4.0.0-alpha",
+    "matthiasmullie/minify": "^1.3",
+    "coffeecode/optimizer": "^1.0",
+    "coffeecode/paginator": "^1.0",
+    "coffeecode/router": "^1.0"
+  }
+}

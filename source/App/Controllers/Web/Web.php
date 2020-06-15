@@ -26,22 +26,7 @@ class Web extends Controller
      */
     public function home(): void
     {
-        $head = $this->seo->render(
-            CONF_SITE_NAME . " - " . CONF_SITE_TITLE,
-            CONF_SITE_DESC,
-            url(),
-            theme("/assets/images/share.jpg")
-        );
-
-        echo $this->view->render("home", [
-            "head" => $head,
-            "video" => "lDZGl9Wdc7Y",
-            "blog" => (new Post())
-                ->findPost()
-                ->order("post_at DESC")
-                ->limit(6)
-                ->fetch(true)
-        ]);
+        redirect("/cadastrar");
     }
 
 

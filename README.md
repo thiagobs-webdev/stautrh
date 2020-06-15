@@ -54,6 +54,39 @@ Por meio do uso de alguns componentes externos foi possível auxiliar na **Estru
 
 <p align="center"><img src="https://github.com/thiagobs-webdev/stautrh/blob/master/_modeling/db/DeepinScreenshot_select-area_20200614204928.png" width="600"></p>
 
+Por meu do **SGBD** [MariaDB](https://mariadb.org/) foi criado o Banco de Dados necessário para armazenar as informções. A criação da *Tabelas* foi por meu do seguinte *SQL*:
+
+```sql
+-- Delete Tables
+DROP TABLE IF EXISTS `drinks`;
+DROP TABLE IF EXISTS `users`;
+
+CREATE TABLE `users` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(255) NOT NULL,
+  `last_name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NULL DEFAULT NULL ON UPDATE current_timestamp(),
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- Table drinks
+CREATE TABLE `drinks` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) unsigned NOT NULL,
+  `amount_ml` int(11) unsigned NOT NULL,
+  `drink` varchar(255) NOT NULL DEFAULT 'Água',
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  KEY `drink_user` (`user_id`),
+  CONSTRAINT `user` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+```
+
 Para obter sucesso nas *rotas API*, *Email e Senha* (token) foi inserido no **Headers** das requisições pertinentes.
 Por meio do [Postman](https://www.postman.com/) foi-se criando o **collection** necessário para consumir e testar as **rotas** desenvolvidas.
 

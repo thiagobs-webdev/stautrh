@@ -1,0 +1,303 @@
+{
+	"info": {
+		"_postman_id": "060de442-8407-4a04-9264-61b2b52f169e",
+		"name": "StautRH",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "User Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "Thiago",
+									"description": "Primeiro Nome",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "Bomfim",
+									"description": "Sobrenome",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "dev@thiagobs.me",
+									"description": "Email",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "admin1234",
+									"description": "Senha",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/users",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"users"
+							]
+						},
+						"description": "Um Usuário pode ser criado por este método!"
+					},
+					"response": []
+				},
+				{
+					"name": "User Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "dev@thiagobs.me",
+									"description": "Primeiro Nome",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "admin1234",
+									"description": "Sobrenome",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/login",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"login"
+							]
+						},
+						"description": "O Usuário pode fazer Login por esta API."
+					},
+					"response": []
+				},
+				{
+					"name": "User Data",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "email",
+								"value": "{{email}}"
+							},
+							{
+								"key": "password",
+								"value": "{{password}}"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/users/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"users",
+								"1"
+							]
+						},
+						"description": "O Usuário pode obter seus Dados por esta API, desde que forneça email e senha como token no Heraders da Requisição."
+					},
+					"response": []
+				},
+				{
+					"name": "Users Data All",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "email",
+								"value": "{{email}}"
+							},
+							{
+								"key": "password",
+								"value": "{{password}}"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/users",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"users"
+							]
+						},
+						"description": "O Usuário pode obter todos os Dados de usuários por esta API, desde que forneça email e senha como token no Heraders da Requisição."
+					},
+					"response": []
+				},
+				{
+					"name": "User Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "email",
+								"value": "{{email}}"
+							},
+							{
+								"key": "password",
+								"value": "{{password}}"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "first_name",
+									"value": "Thiago",
+									"description": "Primeiro Nome",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "Bomfim",
+									"description": "Sobrenome",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "dev@thiagobs.me",
+									"description": "Email",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "",
+									"description": "Senha pode ser alterada ou não",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/users/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"users",
+								"1"
+							]
+						},
+						"description": "O Usuário pode atualizar seus Dados por esta API, desde que forneça email e senha como token no Heraders da Requisição."
+					},
+					"response": []
+				},
+				{
+					"name": "User Drink Add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "email",
+								"value": "{{email}}",
+								"type": "text"
+							},
+							{
+								"key": "password",
+								"value": "{{password}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "amount_ml",
+									"value": "1000",
+									"description": "Quantidade de Drink em Ml a acrescentar",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/users/1/drink",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"users",
+								"1",
+								"drink"
+							]
+						},
+						"description": "O Usuário pode adicionar seus Drinks por esta API, desde que forneça email e senha como token no Heraders da Requisição."
+					},
+					"response": []
+				},
+				{
+					"name": "User Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "email",
+								"value": "{{email}}"
+							},
+							{
+								"key": "password",
+								"value": "{{password}}"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/users/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"users",
+								"1"
+							]
+						},
+						"description": "O Usuário pode excluir sua conta por esta API, desde que forneça email e senha como token no Heraders da Requisição."
+					},
+					"response": []
+				}
+			],
+			"description": "Requisições do Usuário para API para suas atividades",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "610729cb-f57b-4694-b6c9-bb6c8cf302e0",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "31554458-71ee-4283-b62f-bf42a12f2edc",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

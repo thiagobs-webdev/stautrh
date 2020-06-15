@@ -1,4 +1,4 @@
-<p align="center"><img src="https://www.magicwebdesign.com.br/assets/images/magic_logo.png" width="400"></p>
+<p align="center"><img src="https://www.stautrh.com.br/wp-content/uploads/2017/10/logotiponovo.png" width="400"></p>
 
 ## Sobre O Teste
 

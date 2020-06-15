@@ -1,25 +1,38 @@
-<p align="center" style="background-color: #000;"><img src="https://www.stautrh.com.br/wp-content/uploads/2017/10/logotiponovo.png" width="400"></p>
+<p align="center" color="red"><img src="https://www.stautrh.com.br/wp-content/uploads/2017/10/logotiponovo.png" width="400"></p>
 
 ## Sobre O Teste
+#### BACKEND PHP - PROJETO API REST
 
-API REST – Utilizando Laravel para cadastro de:
+Você foi convidado para desenvolver a API de um projeto. Para isso, foi escrito uma
+pequena documentação das funcionalidades necessárias no projeto. Os desenvolvedores
+frontend usarão a sua API para criar um aplicativo pessoal para monitorar quantas vezes o
+usuário bebeu água.
 
+##### Observações de implementação:
+
+- O projeto deve ser desenvolvido em PHP e com banco de dados relacional;
+- Não​ deve ser utilizado nenhum framework (Laravel, Slim framework, Doctrine, etc.);
+- Todas as entradas e saídas devem ser no formato JSON;
+- Se possível, a API deve seguir o padrão REST;
+- É desejável que o código use o método Programação Orientada a Objetos;
+- Projetos plagiados serão desconsiderados.
+
+**Endpoints desejáveis:**
  
-
-- Filmes
-- Classificação do Filme
-- Atores
-- Diretor
-- Collection do postman para consumo e teste da API
-- Documentação de como startar a API (comandos necessários, criação de base, migration, etc.)
-- Como rodar o projeto 
-
-Descrever o projeto e estratégias de desenvolvimento no Readme.md, explicando as tecnologias usadas e as decisões tomadas.
-
+ **Tratamentos desejáveis:**
  
+- Na criação de um usuário, retornar um erro se o usuário já existe
+- No login, alertar que o usuário não existe ou que a senha está inválida
+- Na edição e na remoção do usuário, limitar-se apenas ao usuário autenticado
 
-Data de entrega do teste: 09/06/2020
+**Tratamentos opcionais:**
 
+- Paginação na lista de usuários
+- N- Criar um serviço que liste o histórico de registros de um usuário (retornando a data e
+a quantidade em mL de cada registro)
+- Criar um serviço que liste o ranking do usuário que mais bebeu água ​ hoje
+(considerando os ml e não a quantidade de vezes), retornando o nome e a
+quantidade em mililitros (mL)
 
 ## Descrição do Desenvolvimento
 

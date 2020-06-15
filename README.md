@@ -52,16 +52,17 @@ quantidade em mililitros (mL)
 
 Por meio do uso de alguns componentes externos foi possível auxiliar na **Estruturação** do *Projeto*, como por exemplo o compontente [coffeecode/router](https://packagist.org/packages/coffeecode/router). As Rotas API foram criadas para tal finalidade e consumidas através do [Postman](https://www.postman.com/). Um Modelo Entidade Relacionamento (MER) foi construído para mapear o problema e, por meio dele, criado as Classes necessárias.
 
-<p align="center"><img src="https://github.com/thiagobs-webdev/stautrh/blob/master/_modeling/db/DeepinScreenshot_select-area_20200614204928.png" width="400"></p>
+<p align="center"><img src="https://github.com/thiagobs-webdev/stautrh/blob/master/_modeling/db/DeepinScreenshot_select-area_20200614204928.png" width="600"></p>
 
 Para obter sucesso nas *rotas API*, *Email e Senha* (token) foi inserido no **Headers** das requisições pertinentes.
 Por meio do [Postman](https://www.postman.com/) foi-se criando o **collection** necessário para consumir e testar as **rotas** desenvolvidas.
 
-Páginas *Views* foram criadas para acompanhar os resultados das *Resquisições* da *API*. O Acesso às essas páginas se dá por meio da URL basse do instalção (**url/**).
+Páginas *Views* foram criadas para acompanhar os resultados das *Resquisições* da *API*. O Acesso às essas páginas se dá por meio da URL basse do instalação (**url/**).
 
 ## Instalação
 
 1: Clone este repositório em seu Servidor
+
 2: Configure o arquivo `source/Boot/Config` com os dados de suas configurações: 
 
 >   URL -> Url resultante de sua instalação
@@ -70,11 +71,11 @@ Páginas *Views* foram criadas para acompanhar os resultados das *Resquisições
 
 3: Instale as depedências: `composer install`
 
-4: Salve o arquivo Postman Collection **StautRH.postman_collection.json**: [Aquivo no Repositŕio](https://github.com/thiagobs-webdev/stautrh/blob/master/_files/StautRH.postman_collection.json)
+4: Salve o arquivo Postman Collection **StautRH.postman_collection.json**: [Aquivo no Repositório](https://github.com/thiagobs-webdev/stautrh/blob/master/_files/StautRH.postman_collection.json)
 
 5: Abra/Importe  o arquivo Postman Collection **StautRH.postman_collection.json** em seu programa *Postman*
 
-6: Salve o arquivo de Ambiente (Environment) **StautRH_Test.postman_environment.json**: [Aquivo no Repositŕio](https://github.com/thiagobs-webdev/stautrh/blob/master/_files/StautRH_Test.postman_environment.json)
+6: Salve o arquivo de Ambiente (Environment) **StautRH_Test.postman_environment.json**: [Aquivo no Repositório](https://github.com/thiagobs-webdev/stautrh/blob/master/_files/StautRH_Test.postman_environment.json)
 
 7: Abra/Importe  o arquivo de Ambiente (Environment) **StautRH_Test.postman_environment.json** em seu programa *Postman*
 
@@ -90,4 +91,4 @@ Boa Sorte \o/
 ## Considerações Finais
 
 A execução deste projeto pode ser obtido online em [https://www.stautrh.thiagobs.me/](https://www.stautrh.thiagobs.me/).
-Para consumir a API deste link online, basta apenas Salvar/Importar o **Postman Collection** ([Aquivo no Repositŕio](https://github.com/thiagobs-webdev/stautrh/blob/master/_files/StautRH.postman_collection.json)) e ****Ambiente (Environment)**** [Aquivo no Repositŕio](https://github.com/thiagobs-webdev/stautrh/blob/master/_files/StautRH_Test.postman_environment.json). Não há necessidade de alterar os arquivo, basta apenas importá-los no *Postman* e consumir na API.
+Para consumir a API deste link online, basta apenas Salvar/Importar o **Postman Collection** ([Aquivo no Repositório](https://github.com/thiagobs-webdev/stautrh/blob/master/_files/StautRH.postman_collection.json)) e ****Ambiente (Environment)**** [Aquivo no Repositório](https://github.com/thiagobs-webdev/stautrh/blob/master/_files/StautRH_Test.postman_environment.json). Não há necessidade de alterar os arquivo, basta apenas importá-los no *Postman* e consumir na API.

@@ -1,4 +1,4 @@
-<p align="center"><img src="https://media-exp1.licdn.com/dms/image/C4E1BAQG1YOXyEQOlLA/company-background_10000/0?e=1592319600&v=beta&t=AoXyh9x0kdKCnaxh_TU5E33GGt1-tI_M2TV-K08tOOs" width="400"></p>
+<p align="center" style="background-color: #000;"><img src="https://www.stautrh.com.br/wp-content/uploads/2017/10/logotiponovo.png" width="400"></p>
 
 ## Sobre O Teste
 

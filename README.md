@@ -22,7 +22,12 @@ usuário bebeu água.
 Operação | Verbo HTTP |  Entrada  | Saída | Header
 ---|--------------| --------------|-------|---------|
 **/users/** (criar um novo usuário) | POST | email * name * password * |      |        |
-**/login** (criar um novo usuário) | POST | email * password * |  **token** iduser email name drink_counter    |        |
+**/login** (autenticar com um usuário) | POST | email * password * |  **token** iduser email name drink_counter    |        |
+**/users/:iduser** (autenticar com um usuário) | GET | |  iduser email name drink_counter    | token*  |
+**/users/** (obter a lista de usuários) | GET | |  (array de usuários)  | token*  |
+**/users/:iduser** (editar o seu próprio usuário) | PUT | email name password|   | token*  |
+**/users/:iduser** (apagar o seu próprio usuário) | DELETE | |   | token*  |
+**/users/:iduser/drink** (incrementar o contador de quantas vezes bebeu água) | POST | drink_ml (int) | iduser email name drink_counter  | token*  |
  
  **Tratamentos desejáveis:**
  

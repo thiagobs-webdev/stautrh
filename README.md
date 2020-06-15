@@ -50,7 +50,7 @@ quantidade em mililitros (mL)
 
 ## Descrição do Desenvolvimento
 
-Por meio do uso de alguns componentes externos foi possível auxiliar na **Estruturação** do *Projeto*, como por exemplo o compontente [coffeecode/router](https://packagist.org/packages/coffeecode/router). O uso do padrão *MVC* (Model-View-Controller) contribuiu para a uma organização efeciente do projeto, assim como o aproveitamento da **Orientação a Objetos** no seu desenvolvimento. As Rotas API foram criadas para tal finalidade e consumidas através do [Postman](https://www.postman.com/). Um Modelo Entidade Relacionamento (MER) foi construído para mapear o problema e, por meio dele, criado as Classes necessárias.
+Por meio do uso de alguns componentes externos foi possível auxiliar na **Estruturação** do *Projeto*, como por exemplo o compontente [coffeecode/router](https://packagist.org/packages/coffeecode/router). O uso do padrão *MVC* (Model-View-Controller) contribuiu para a uma organização eficiente do projeto, assim como o aproveitamento da **Orientação a Objetos** no seu desenvolvimento. As Rotas API foram criadas para tal finalidade e consumidas através do [Postman](https://www.postman.com/). Um Modelo Entidade Relacionamento (MER) foi construído para mapear o problema e, por meio dele, criado as Classes necessárias.
 
 <p align="center"><img src="https://github.com/thiagobs-webdev/stautrh/blob/master/_modeling/db/DeepinScreenshot_select-area_20200614204928.png" width="600"></p>
 

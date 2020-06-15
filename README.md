@@ -90,7 +90,7 @@ CREATE TABLE `drinks` (
 Para obter sucesso nas *rotas API*, *Email e Senha* (token) foi inserido no **Headers** das requisições pertinentes.
 Por meio do [Postman](https://www.postman.com/) foi-se criando o **collection** necessário para consumir e testar as **rotas** desenvolvidas.
 
-Páginas *Views* foram criadas para acompanhar os resultados das *Resquisições* da *API*. O Acesso às essas páginas se dá por meio da URL basse do instalação (**url/**).
+Páginas *Views* foram criadas para acompanhar os resultados das *Resquisições* da *API*. O Acesso a essas páginas se dá por meio da URL base do instalação (**url/**).
 
 ## Instalação
 
@@ -124,4 +124,4 @@ Boa Sorte \o/
 ## Considerações Finais
 
 A execução deste projeto pode ser obtido online em [https://www.stautrh.thiagobs.me/](https://www.stautrh.thiagobs.me/).
-Para consumir a API deste link online, basta apenas Salvar/Importar o **Postman Collection** ([Aquivo no Repositório](https://github.com/thiagobs-webdev/stautrh/blob/master/_files/StautRH.postman_collection.json)) e ****Ambiente (Environment)**** [Aquivo no Repositório](https://github.com/thiagobs-webdev/stautrh/blob/master/_files/StautRH_Test.postman_environment.json). Não há necessidade de alterar os arquivo, basta apenas importá-los no *Postman* e consumir na API.
+Para consumir a API deste link online, basta apenas Salvar/Importar o **Postman Collection** ([Aquivo no Repositório](https://github.com/thiagobs-webdev/stautrh/blob/master/_files/StautRH.postman_collection.json)) e ****Ambiente (Environment)**** [Aquivo no Repositório](https://github.com/thiagobs-webdev/stautrh/blob/master/_files/StautRH_Test.postman_environment.json) em seu *Postman*. Não há necessidade de alterar os arquivo, basta apenas importá-los no *Postman* e consumir na API.

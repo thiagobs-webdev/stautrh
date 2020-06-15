@@ -52,8 +52,9 @@ quantidade em mililitros (mL)
 
 Por meio do uso de alguns componentes externos foi possível auxiliar na **Estruturação** do *Projeto*, como por exemplo o compontente [coffeecode/router](https://packagist.org/packages/coffeecode/router). As Rotas API foram criadas para tal finalidade e consumidas através do [Postman](https://www.postman.com/). Um Modelo Entidade Relacionamento (MER) foi construído para mapear o problema e, por meio dele, criado as Classes necessárias.
 
-<p align="center"><img src="https://www.magicwebdesign.com.br/assets/images/magic_logo.png" width="400"></p>
+<p align="center"><img src="https://github.com/thiagobs-webdev/stautrh/blob/master/_modeling/db/DeepinScreenshot_select-area_20200614204928.png" width="400"></p>
 
+Para obter sucesso nas *rotas API*, *Email e Senha* (token) foi inserido no **Headers** das requisições pertinentes.
 Por meio do [Postman](https://www.postman.com/) foi-se criando o **collection** necessário para consumir e testar as **rotas** desenvolvidas.
 
 Páginas *Views* foram criadas para acompanhar os resultados das *Resquisições* da *API*. O Acesso às essas páginas se dá por meio da URL basse do instalção (**url/**).

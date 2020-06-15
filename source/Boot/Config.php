@@ -11,7 +11,7 @@ define("CONF_DB_NAME", "stautrh");
 /**
  * PROJECT URLs
  */
-define("CONF_URL_BASE", "https://stautrh.thiagobs.me");
+define("CONF_URL_BASE", "https://www.stautrh.thiagobs.me");
 define("CONF_URL_TEST", "https://www.localhost/challenges/stautrh");
 define("CONF_URL_ERROR", CONF_URL_BASE . "/404");
 

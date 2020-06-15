@@ -18,6 +18,11 @@ usuário bebeu água.
 - Projetos plagiados serão desconsiderados.
 
 **Endpoints desejáveis:**
+
+Operação | Verbo HTTP |  Entrada  | Saída | Header
+---|--------------| --------------|-------|---------|
+**/users/** (criar um novo usuário) | POST | email * name * password * |      |        |
+**/login** (criar um novo usuário) | POST | email * password * |  **token** iduser email name drink_counter    |        |
  
  **Tratamentos desejáveis:**
  
